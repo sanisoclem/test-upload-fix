@@ -1,0 +1,26 @@
+﻿<div class="container">
+    <div ng-controller="menuController as menu">
+        <div class="masthead">
+            <h3 class="text-muted">Web Socket Demo</h3>
+            <nav>
+                <ul class="nav nav-justified">
+                    <li ng-class="{active: menu.inRoute('home')}"><a ui-sref="home">Home</a></li>
+                    <li ng-class="{active: menu.inRoute('request')}"><a ui-sref="request.list">Requests</a></li>
+                    <li ng-class="{active: menu.inRoute('createRequest')}"><a ui-sref="createRequest">Create Request</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <div class="content">
+        <ui-view></ui-view>
+    </div>
+</div>
+
+@section scripts {
+    <script src="~/Scripts/jquery-3.1.1.js"></script>
+    <script src="~/Scripts/angular.js"></script>
+    <script src="~/Scripts/angular-animate.js"></script>
+    <script src="~/Scripts/angular-ui-router.js"></script>
+    <script src="~/Static/js/app.js"></script>
+}

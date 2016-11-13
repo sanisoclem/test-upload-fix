@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html lang="en" ng-app="sd.app">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="~/Static/img/rocket.svg">
+
+    <title>Web Socket Demo</title>
+
+    <!-- Bootstrap core CSS -->
+
+    <link href="~/Content/css/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/css/bootstrap-theme.css" rel="stylesheet" />
+    <link href="~/Content/css/ui-bootstrap-csp.css" rel="stylesheet" />
+    <link href="~/Content/css/font-awesome.css" rel="stylesheet" />
+    <link href="~/Static/css/app.css" rel="stylesheet" />
+    @RenderSection("head", false)
+</head>
+
+<body>
+    <div class="body-content">
+        @RenderBody()
+    </div>
+    @*<div class="container">
+        <footer class="footer">
+            <p>&copy; 2016 jc.net</p>
+        </footer>
+    </div>*@
+    @RenderSection("scripts", false)
+</body>
+</html>
